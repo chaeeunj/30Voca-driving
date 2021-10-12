@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Muli&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styleVoca.css">
+    <title>test</title>
+</head>
+<body>
+  <div class="side-nav">
+    <ul>
+      <li class="list">
+        <a href="index.html">
+          <span class="icon">1</span>
+          <span class="list">week</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="2week.html">
+          <span class="icon">2</span>
+          <span class="list">week</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="3week.html">
+          <span class="icon">3</span>
+          <span class="list">week</span>
+        </a>
+      </li>
+      <li class="list active">
+        <a href="4week.html">
+          <span class="icon">4</span>
+          <span class="list">week</span>
+        </a>
+      </li>
+      <li class="list">
+        <a href="5week.html">
+          <span class="icon">5</span>
+          <span class="list">week</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <section>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonialBox">
+            <img src="right-quote.png" class="quote">
+            <div class="content">
+                <p>nominate 임명하다 &nbsp acquire 취득하다<br>
+                scheme 계획,음모 &nbsp virtue 미덕,장점<br>
+                compete 경쟁하다 &nbsp grade 등급,학년<br>
+                applaud 박수갈채하다 &nbsp stir 휘젓다<br>
+                enormous 거대한 &nbsp scatter 흩뿌리다<p>
+                <div class="details">
+                  <h3>Day 19</h3>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonialBox">
+            <img src="right-quote.png" class="quote">
+            <div class="content">
+              <p>confident 자신 있는 &nbsp confidential 비밀의<br>
+                lie 눕다,거짓말하다 &nbsp obscure 애매한<br>
+                compensate 보상하다 &nbsp rphan 고아<br>
+                sentiment 감상,감정 &nbsp regulate 조정하다<br>
+                considerable 상당한 &nbsp splendid 화려한<p>
+                <div class="details">
+                  <h3>Day 20</h3>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonialBox">
+            <img src="right-quote.png" class="quote">
+            <div class="content">
+              <p>pave 포장하다 &nbsp deserve ~할 가치가 있다<br>
+                conserve 보존하다 &nbsp lay 놓다,두다<br>
+                observe 관찰하다 &nbsp perform 이행하다<br>
+                pursue 추구하다 &nbsp restoration 복구,회복<br>
+                assign 할당하다 &nbsp worship 숭배,예배<p>
+                <div class="details">
+                  <h3>Day 21</h3>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonialBox">
+            <img src="right-quote.png" class="quote">
+            <div class="content">
+              <p>endeavor 노력,시도 &nbsp famine 기근,기아<br>
+                industrious 부지런한 &nbsp aspect 측면,양상<br>
+                associate 연상하다 &nbsp bond 유대,계약<br>
+                prospect 가능성 &nbsp insist 주장하다<br>
+                ridiculous 우스운 &nbsp establish 수립하다</p>
+                <div class="details">
+                  <h3>Day 22</h3>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonialBox">
+            <img src="right-quote.png" class="quote">
+            <div class="content">
+              <p>restrict 제한하다 &nbsp overcome 극복하다<br>
+                activate 작동시키다 &nbsp popularity 인기<br>
+                ipopulation 인구 &nbsp respective 각각의<br>
+                construct 건설하다 &nbsp instruct 가르치다<br>
+                distinguish 구별하다 &nbsp groom 신랑</p>
+                <div class="details">
+                  <h3>Day 23</h3>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testimonialBox">
+            <img src="right-quote.png" class="quote">
+            <div class="content">
+              <p>trait 특성,특징 &nbsp inferior 하위의<br>
+                treat 다루다 &nbsp successive 연속하는<br>
+                horizon 지평선 &nbsp unify 통합하다<br>
+                intuition 직관 &nbsp equipment 장비,준비<br>
+                iwhereas 그런데 &nbsp ruin 폐허,손상</p>
+                <div class="details">
+                  <h3>Day 24</h3>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // add active class in selected tab
+   
+    const list = document.querySelectorAll('.list');
+    function activeLink() {
+      list.forEach((item) =>
+      item.classList.remove('active'));
+      this.classList.add('active');
+    }
+    list.forEach((item) =>
+    item.addEventListener('click', activeLink));
+    
+    // let list = document.querySelectorAll('.list');
+    // for (let i=0; i<list.length; i++) {
+    //   list[i].onclick = function() {
+    //     let j = 0;
+    //     while(j < list.length) {
+    //       list[j++].className = 'list';
+    //     }
+    //     list[i].className = 'list active'
+    //   }
+    // }
+    
+  </script>
+  
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0, // 슬라이드 옆과 옆 사이 간격
+        stretch: 0,
+        depth: 100,
+        modifier: 2, // 슬라이드 앞장과 뒷장 사이의 간격(높이)
+        slideShadows: true,
+      },
+      loop: true, // 루프생성 -> 내가 만든 슬라이드 4개가 계속 반복
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.side-nav {
+  position: fixed;
+  width: 220px;
+  height: 100%;
+  background-color: white;
+  opacity: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.side-nav ul {
+  position: absolute;
+}
+
+.side-nav ul li {
+  position: relative;
+  list-style: none;
+  font-size: 27px;
+  padding: 10px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.side-nav ul li.active {
+  background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+
+.side-nav ul li a {
+  text-decoration: none;
+  position: relative;
+}
+
+.side-nav ul li a span {
+  font-family: 'Lexend Deca', sans-serif;
+  color: black;
+  margin-right: 15px;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  margin-left: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+  overflow: hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 420px;
+  background: white;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+  filter: blur(4px);
+  border-radius: 10px;
+}
+
+/* 현재 슬라이드만 적용 */
+.swiper-slide-active {
+  filter: blur(0px); 
+  background: white;
+}
+
+.testimonialBox {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  padding-top: 90px;
+  color: black;
+}
+
+.testimonialBox .quote {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  opacity: 0.2;
+}
+
+.testimonialBox .content {
+  font-size: 17px;
+  line-height: 40px;
+}
+
+.testimonialBox .details {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testimonialBox .details h3 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #2196f3;
+  line-height: 1.1rem;
+}
+
+/* 그늘지는 효과 없애기(근데 적용안됨 */
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
